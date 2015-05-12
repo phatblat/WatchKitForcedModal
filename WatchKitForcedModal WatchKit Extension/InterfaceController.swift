@@ -122,6 +122,8 @@ class InterfaceController: WKInterfaceController {
         passcodeGroup?.setHidden(true)
         animationGroup?.setHidden(true)
         contentGroup?.setHidden(false)
+
+        setTitle("Content")
         println("Unlocked")
     }
 
@@ -129,6 +131,8 @@ class InterfaceController: WKInterfaceController {
         passcodeGroup?.setHidden(false)
         animationGroup?.setHidden(true)
         contentGroup?.setHidden(true)
+
+        setTitle("Passcode")
         println("Locked")
 
         // Reset the entry state
