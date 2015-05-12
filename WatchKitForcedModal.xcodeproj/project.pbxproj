@@ -59,8 +59,6 @@
 		B5CE88021B02573B00A5C71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5CE88041B02573B00A5C71C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B5CE88071B02573B00A5C71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B5CE88121B02573B00A5C71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5CE88131B02573B00A5C71C /* WatchKitForcedModalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchKitForcedModalTests.swift; sourceTree = "<group>"; };
 		B5CE88211B0258DA00A5C71C /* WatchKitForcedModal WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchKitForcedModal WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CE88241B0258DA00A5C71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5CE88251B0258DA00A5C71C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				B5CE87FA1B02573B00A5C71C /* WatchKitForcedModal */,
-				B5CE88101B02573B00A5C71C /* WatchKitForcedModalTests */,
 				B5CE88221B0258DA00A5C71C /* WatchKitForcedModal WatchKit Extension */,
 				B5CE882F1B0258DA00A5C71C /* WatchKitForcedModal WatchKit App */,
 				B5CE87F91B02573B00A5C71C /* Products */,
@@ -127,23 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				B5CE87FC1B02573B00A5C71C /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B5CE88101B02573B00A5C71C /* WatchKitForcedModalTests */ = {
-			isa = PBXGroup;
-			children = (
-				B5CE88131B02573B00A5C71C /* WatchKitForcedModalTests.swift */,
-				B5CE88111B02573B00A5C71C /* Supporting Files */,
-			);
-			path = WatchKitForcedModalTests;
-			sourceTree = "<group>";
-		};
-		B5CE88111B02573B00A5C71C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B5CE88121B02573B00A5C71C /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
