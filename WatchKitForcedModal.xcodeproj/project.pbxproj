@@ -12,18 +12,7 @@
 		B5CE88031B02573B00A5C71C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CE88011B02573B00A5C71C /* Main.storyboard */; };
 		B5CE88051B02573B00A5C71C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5CE88041B02573B00A5C71C /* Images.xcassets */; };
 		B5CE88081B02573B00A5C71C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5CE88061B02573B00A5C71C /* LaunchScreen.xib */; };
-		B5CE88141B02573B00A5C71C /* WatchKitForcedModalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE88131B02573B00A5C71C /* WatchKitForcedModalTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B5CE880E1B02573B00A5C71C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B5CE87F01B02573B00A5C71C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B5CE87F71B02573B00A5C71C;
-			remoteInfo = WatchKitForcedModal;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B5CE87F81B02573B00A5C71C /* WatchKitForcedModal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchKitForcedModal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,20 +22,12 @@
 		B5CE88021B02573B00A5C71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5CE88041B02573B00A5C71C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B5CE88071B02573B00A5C71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B5CE880D1B02573B00A5C71C /* WatchKitForcedModalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchKitForcedModalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CE88121B02573B00A5C71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5CE88131B02573B00A5C71C /* WatchKitForcedModalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchKitForcedModalTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B5CE87F51B02573B00A5C71C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5CE880A1B02573B00A5C71C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -69,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				B5CE87F81B02573B00A5C71C /* WatchKitForcedModal.app */,
-				B5CE880D1B02573B00A5C71C /* WatchKitForcedModalTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,24 +112,6 @@
 			productReference = B5CE87F81B02573B00A5C71C /* WatchKitForcedModal.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B5CE880C1B02573B00A5C71C /* WatchKitForcedModalTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B5CE881A1B02573B00A5C71C /* Build configuration list for PBXNativeTarget "WatchKitForcedModalTests" */;
-			buildPhases = (
-				B5CE88091B02573B00A5C71C /* Sources */,
-				B5CE880A1B02573B00A5C71C /* Frameworks */,
-				B5CE880B1B02573B00A5C71C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B5CE880F1B02573B00A5C71C /* PBXTargetDependency */,
-			);
-			name = WatchKitForcedModalTests;
-			productName = WatchKitForcedModalTests;
-			productReference = B5CE880D1B02573B00A5C71C /* WatchKitForcedModalTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +123,6 @@
 				TargetAttributes = {
 					B5CE87F71B02573B00A5C71C = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					B5CE880C1B02573B00A5C71C = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = B5CE87F71B02573B00A5C71C;
 					};
 				};
 			};
@@ -182,7 +140,6 @@
 			projectRoot = "";
 			targets = (
 				B5CE87F71B02573B00A5C71C /* WatchKitForcedModal */,
-				B5CE880C1B02573B00A5C71C /* WatchKitForcedModalTests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,13 +155,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5CE880B1B02573B00A5C71C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -217,23 +167,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5CE88091B02573B00A5C71C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5CE88141B02573B00A5C71C /* WatchKitForcedModalTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B5CE880F1B02573B00A5C71C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B5CE87F71B02573B00A5C71C /* WatchKitForcedModal */;
-			targetProxy = B5CE880E1B02573B00A5C71C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B5CE88011B02573B00A5C71C /* Main.storyboard */ = {
@@ -356,40 +290,6 @@
 			};
 			name = Release;
 		};
-		B5CE881B1B02573B00A5C71C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WatchKitForcedModalTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchKitForcedModal.app/WatchKitForcedModal";
-			};
-			name = Debug;
-		};
-		B5CE881C1B02573B00A5C71C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WatchKitForcedModalTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchKitForcedModal.app/WatchKitForcedModal";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -407,14 +307,6 @@
 			buildConfigurations = (
 				B5CE88181B02573B00A5C71C /* Debug */,
 				B5CE88191B02573B00A5C71C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		B5CE881A1B02573B00A5C71C /* Build configuration list for PBXNativeTarget "WatchKitForcedModalTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B5CE881B1B02573B00A5C71C /* Debug */,
-				B5CE881C1B02573B00A5C71C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
