@@ -82,7 +82,11 @@ class InterfaceController: WKInterfaceController {
         switch keyEntrySequence.count {
         case 4:
             entryIndicator4?.setHidden(false)
-            unlock()
+            let delay = Int64(1 * NSEC_PER_SEC) / 2 // half second
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, delay), dispatch_get_main_queue()) {
+                [unowned self] in
+                self.unlock()
+            }
         case 3:
             entryIndicator4?.setHidden(true)
             entryIndicator3?.setHidden(false)
