@@ -14,31 +14,74 @@
                             <items>
                                 <group width="1" height="39" alignment="left" spacing="0.0" id="B3l-Z5-0hD" userLabel="1-3 Group">
                                     <items>
-                                        <button width="45" height="35" alignment="left" title="1" id="nzA-6N-f60"/>
-                                        <button width="45" height="35" alignment="center" title="2" id="lpg-pt-AIn"/>
-                                        <button width="45" height="35" alignment="right" title="3" id="YVG-dm-dxs"/>
+                                        <button width="45" height="35" alignment="left" title="1" id="nzA-6N-f60">
+                                            <connections>
+                                                <action selector="didTap1" destination="AgC-eL-Hgc" id="F3t-ag-w65"/>
+                                            </connections>
+                                        </button>
+                                        <button width="45" height="35" alignment="center" title="2" id="lpg-pt-AIn">
+                                            <connections>
+                                                <action selector="didTap2" destination="AgC-eL-Hgc" id="Yny-rD-8ML"/>
+                                            </connections>
+                                        </button>
+                                        <button width="45" height="35" alignment="right" title="3" id="YVG-dm-dxs">
+                                            <connections>
+                                                <action selector="didTap3" destination="AgC-eL-Hgc" id="JQu-qD-3of"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
                                 <group width="1" height="39" alignment="left" spacing="0.0" id="x2U-f0-mcp" userLabel="4-6 Group">
                                     <items>
-                                        <button width="45" height="35" alignment="left" title="4" id="IbV-Pd-ycr"/>
-                                        <button width="45" height="35" alignment="center" title="5" id="QaV-25-D2Z"/>
-                                        <button width="45" height="35" alignment="right" title="6" id="EIq-qN-ck6"/>
+                                        <button width="45" height="35" alignment="left" title="4" id="IbV-Pd-ycr">
+                                            <connections>
+                                                <action selector="didTap4" destination="AgC-eL-Hgc" id="BYf-Yr-8nI"/>
+                                            </connections>
+                                        </button>
+                                        <button width="45" height="35" alignment="center" title="5" id="QaV-25-D2Z">
+                                            <connections>
+                                                <action selector="didTap5" destination="AgC-eL-Hgc" id="YEh-8p-DVu"/>
+                                            </connections>
+                                        </button>
+                                        <button width="45" height="35" alignment="right" title="6" id="EIq-qN-ck6">
+                                            <connections>
+                                                <action selector="didTap6" destination="AgC-eL-Hgc" id="ZI9-J0-YnU"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
                                 <group width="1" height="39" alignment="left" spacing="0.0" id="bei-6i-iFs" userLabel="7-9 Group">
                                     <items>
-                                        <button width="45" height="35" alignment="left" title="7" id="cH1-fG-lED"/>
-                                        <button width="45" height="35" alignment="center" title="8" id="BAh-T9-gio"/>
-                                        <button width="45" height="35" alignment="right" title="9" id="goc-JT-HgQ"/>
+                                        <button width="45" height="35" alignment="left" title="7" id="cH1-fG-lED">
+                                            <connections>
+                                                <action selector="didTap7" destination="AgC-eL-Hgc" id="8CY-Nv-31Z"/>
+                                            </connections>
+                                        </button>
+                                        <button width="45" height="35" alignment="center" title="8" id="BAh-T9-gio">
+                                            <connections>
+                                                <action selector="didTap8" destination="AgC-eL-Hgc" id="3Uf-9B-VBS"/>
+                                            </connections>
+                                        </button>
+                                        <button width="45" height="35" alignment="right" title="9" id="goc-JT-HgQ">
+                                            <connections>
+                                                <action selector="didTap9" destination="AgC-eL-Hgc" id="qDA-m2-CKM"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
                                 <group width="1" height="37" alignment="left" spacing="0.0" id="Uby-Bb-trk" userLabel="0 Delete Group">
                                     <items>
-                                        <button width="45" height="35" alignment="left" hidden="YES" title="7" id="7cw-aM-idy"/>
-                                        <button width="45" height="35" alignment="center" title="0" id="lBl-PO-NjV"/>
-                                        <button alignment="right" id="9Zv-KO-2tn">
+                                        <button width="45" height="35" alignment="left" hidden="YES" id="7cw-aM-idy"/>
+                                        <button width="45" height="35" alignment="center" title="0" id="lBl-PO-NjV">
+                                            <connections>
+                                                <action selector="didTap0" destination="AgC-eL-Hgc" id="9KZ-Rf-CD0"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="right" id="9Zv-KO-2tn" userLabel="Delete Button">
                                             <group key="contentGroup" width="45" height="35" alignment="left" backgroundImage="DeleteButton_42mm" contentMode="center" id="YBX-Db-qry"/>
+                                            <connections>
+                                                <action selector="didTapDelete" destination="AgC-eL-Hgc" id="Q9D-pZ-0fG"/>
+                                            </connections>
                                         </button>
                                     </items>
                                 </group>
@@ -77,6 +120,10 @@
                     </items>
                     <connections>
                         <outlet property="contentGroup" destination="Ad8-ix-ORC" id="czK-3w-Z8W"/>
+                        <outlet property="entryIndicator1" destination="eUb-vb-43n" id="MwT-MI-rJ0"/>
+                        <outlet property="entryIndicator2" destination="AeM-7d-JoI" id="AOo-xk-rde"/>
+                        <outlet property="entryIndicator3" destination="4Sa-Z5-JIb" id="g0J-Fk-AFG"/>
+                        <outlet property="entryIndicator4" destination="XTj-Gf-IIr" id="KhF-nt-cvv"/>
                         <outlet property="passcodeGroup" destination="Bus-RQ-X07" id="aty-zZ-nS8"/>
                     </connections>
                 </controller>
