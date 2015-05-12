@@ -37,7 +37,9 @@
                                     <items>
                                         <button width="45" height="35" alignment="left" hidden="YES" title="7" id="7cw-aM-idy"/>
                                         <button width="45" height="35" alignment="center" title="0" id="lBl-PO-NjV"/>
-                                        <button width="45" height="35" alignment="right" hidden="YES" title="9" id="9Zv-KO-2tn"/>
+                                        <button alignment="right" id="9Zv-KO-2tn">
+                                            <group key="contentGroup" width="45" height="35" alignment="left" backgroundImage="DeleteButton_42mm" contentMode="center" id="YBX-Db-qry"/>
+                                        </button>
                                     </items>
                                 </group>
                             </items>
