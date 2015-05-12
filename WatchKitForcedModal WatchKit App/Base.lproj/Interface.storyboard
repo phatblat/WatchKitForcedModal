@@ -10,30 +10,30 @@
             <objects>
                 <controller title="Passcode" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchKitForcedModal_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" height="174" alignment="left" layout="vertical" id="Bus-RQ-X07" userLabel="Passcode Group">
+                        <group width="1" height="174" alignment="left" layout="vertical" radius="0.0" id="Bus-RQ-X07" userLabel="Passcode Group">
                             <items>
-                                <group width="1" height="39" alignment="left" spacing="0.0" id="B3l-Z5-0hD">
+                                <group width="1" height="39" alignment="left" spacing="0.0" id="B3l-Z5-0hD" userLabel="1-3 Group">
                                     <items>
                                         <button width="45" height="35" alignment="left" title="1" id="nzA-6N-f60"/>
                                         <button width="45" height="35" alignment="center" title="2" id="lpg-pt-AIn"/>
                                         <button width="45" height="35" alignment="right" title="3" id="YVG-dm-dxs"/>
                                     </items>
                                 </group>
-                                <group width="1" height="39" alignment="left" spacing="0.0" id="x2U-f0-mcp">
+                                <group width="1" height="39" alignment="left" spacing="0.0" id="x2U-f0-mcp" userLabel="4-6 Group">
                                     <items>
                                         <button width="45" height="35" alignment="left" title="4" id="IbV-Pd-ycr"/>
                                         <button width="45" height="35" alignment="center" title="5" id="QaV-25-D2Z"/>
                                         <button width="45" height="35" alignment="right" title="6" id="EIq-qN-ck6"/>
                                     </items>
                                 </group>
-                                <group width="1" height="39" alignment="left" spacing="0.0" id="bei-6i-iFs">
+                                <group width="1" height="39" alignment="left" spacing="0.0" id="bei-6i-iFs" userLabel="7-9 Group">
                                     <items>
                                         <button width="45" height="35" alignment="left" title="7" id="cH1-fG-lED"/>
                                         <button width="45" height="35" alignment="center" title="8" id="BAh-T9-gio"/>
                                         <button width="45" height="35" alignment="right" title="9" id="goc-JT-HgQ"/>
                                     </items>
                                 </group>
-                                <group width="1" height="39" alignment="left" spacing="0.0" id="Uby-Bb-trk">
+                                <group width="1" height="37" alignment="left" spacing="0.0" id="Uby-Bb-trk" userLabel="0 Delete Group">
                                     <items>
                                         <button width="45" height="35" alignment="left" hidden="YES" title="7" id="7cw-aM-idy"/>
                                         <button width="45" height="35" alignment="center" title="0" id="lBl-PO-NjV"/>
@@ -41,6 +41,32 @@
                                             <group key="contentGroup" width="45" height="35" alignment="left" backgroundImage="DeleteButton_42mm" contentMode="center" id="YBX-Db-qry"/>
                                         </button>
                                     </items>
+                                </group>
+                                <group width="1" height="8" alignment="left" radius="0.0" spacing="0.0" id="ba7-aE-1Ym" userLabel="Entry Indicator Group">
+                                    <items>
+                                        <group width="37" height="8" alignment="left" radius="0.0" spacing="0.0" id="eUb-vb-43n" userLabel="Entry Indicator 1">
+                                            <color key="backgroundColor" red="0.31764705882352939" green="0.31764705882352939" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="2" height="8" alignment="left" radius="0.0" spacing="0.0" id="LV9-or-Ldc" userLabel="Spacer">
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </group>
+                                        <group width="37" height="8" alignment="left" radius="0.0" spacing="0.0" id="AeM-7d-JoI" userLabel="Entry Indicator 2">
+                                            <color key="backgroundColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="2" height="8" alignment="left" radius="0.0" spacing="0.0" id="r94-zn-gKp" userLabel="Spacer">
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </group>
+                                        <group width="37" height="8" alignment="left" radius="0.0" spacing="0.0" id="4Sa-Z5-JIb" userLabel="Entry Indicator 3">
+                                            <color key="backgroundColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="2" height="8" alignment="left" radius="0.0" spacing="0.0" id="66F-w9-z3G" userLabel="Spacer">
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </group>
+                                        <group width="37" height="8" alignment="left" radius="0.0" spacing="0.0" id="XTj-Gf-IIr" userLabel="Entry Indicator 4">
+                                            <color key="backgroundColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 </group>
                             </items>
                             <variation key="device=watch38mm" height="150"/>
