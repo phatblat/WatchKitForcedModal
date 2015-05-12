@@ -12,6 +12,9 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet weak var passcodeGroup: WKInterfaceGroup?
+    @IBOutlet weak var contentGroup: WKInterfaceGroup?
+
     override init() {
         super.init()
     }
@@ -19,7 +22,7 @@ class InterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
 
-        // Configure interface objects here.
+        contentGroup?.setHidden(true)
     }
 
     override func willActivate() {

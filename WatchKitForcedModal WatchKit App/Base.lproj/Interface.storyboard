@@ -8,7 +8,50 @@
         <!--Passcode-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller title="Passcode" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchKitForcedModal_WatchKit_App" customModuleProvider="target"/>
+                <controller title="Passcode" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchKitForcedModal_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="174" alignment="left" layout="vertical" id="Bus-RQ-X07" userLabel="Passcode Group">
+                            <items>
+                                <group width="1" height="39" alignment="left" spacing="0.0" id="B3l-Z5-0hD">
+                                    <items>
+                                        <button width="45" height="35" alignment="left" title="1" id="nzA-6N-f60"/>
+                                        <button width="45" height="35" alignment="center" title="2" id="lpg-pt-AIn"/>
+                                        <button width="45" height="35" alignment="right" title="3" id="YVG-dm-dxs"/>
+                                    </items>
+                                </group>
+                                <group width="1" height="39" alignment="left" spacing="0.0" id="x2U-f0-mcp">
+                                    <items>
+                                        <button width="45" height="35" alignment="left" title="4" id="IbV-Pd-ycr"/>
+                                        <button width="45" height="35" alignment="center" title="5" id="QaV-25-D2Z"/>
+                                        <button width="45" height="35" alignment="right" title="6" id="EIq-qN-ck6"/>
+                                    </items>
+                                </group>
+                                <group width="1" height="39" alignment="left" spacing="0.0" id="bei-6i-iFs">
+                                    <items>
+                                        <button width="45" height="35" alignment="left" title="7" id="cH1-fG-lED"/>
+                                        <button width="45" height="35" alignment="center" title="8" id="BAh-T9-gio"/>
+                                        <button width="45" height="35" alignment="right" title="9" id="goc-JT-HgQ"/>
+                                    </items>
+                                </group>
+                                <group width="1" height="39" alignment="left" spacing="0.0" id="Uby-Bb-trk">
+                                    <items>
+                                        <button width="45" height="35" alignment="left" hidden="YES" title="7" id="7cw-aM-idy"/>
+                                        <button width="45" height="35" alignment="center" title="0" id="lBl-PO-NjV"/>
+                                        <button width="45" height="35" alignment="right" hidden="YES" title="9" id="9Zv-KO-2tn"/>
+                                    </items>
+                                </group>
+                            </items>
+                            <variation key="device=watch38mm" height="150"/>
+                        </group>
+                        <group width="1" height="174" alignment="left" layout="vertical" id="Ad8-ix-ORC" userLabel="Content Group">
+                            <variation key="device=watch38mm" height="150"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="contentGroup" destination="Ad8-ix-ORC" id="czK-3w-Z8W"/>
+                        <outlet property="passcodeGroup" destination="Bus-RQ-X07" id="aty-zZ-nS8"/>
+                    </connections>
+                </controller>
             </objects>
         </scene>
     </scenes>
