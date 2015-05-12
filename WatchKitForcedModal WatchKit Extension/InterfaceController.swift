@@ -12,8 +12,11 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var passcodeGroup: WKInterfaceGroup?
+    @IBOutlet weak var animationGroup: WKInterfaceGroup?
     @IBOutlet weak var contentGroup: WKInterfaceGroup?
 
+    @IBOutlet weak var keypadImage: WKInterfaceImage?
+    
     @IBOutlet weak var entryIndicator1: WKInterfaceGroup?
     @IBOutlet weak var entryIndicator2: WKInterfaceGroup?
     @IBOutlet weak var entryIndicator3: WKInterfaceGroup?
@@ -29,6 +32,7 @@ class InterfaceController: WKInterfaceController {
         super.awakeWithContext(context)
 
         contentGroup?.setHidden(true)
+        animationGroup?.setHidden(true)
         entryIndicator1?.setHidden(true)
         entryIndicator2?.setHidden(true)
         entryIndicator3?.setHidden(true)
@@ -81,12 +85,7 @@ class InterfaceController: WKInterfaceController {
     private func updateEntryIndicators() {
         switch keyEntrySequence.count {
         case 4:
-            entryIndicator4?.setHidden(false)
-            let delay = Int64(1 * NSEC_PER_SEC) / 2 // half second
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, delay), dispatch_get_main_queue()) {
-                [unowned self] in
-                self.unlock()
-            }
+            startUnlockAnimation()
         case 3:
             entryIndicator4?.setHidden(true)
             entryIndicator3?.setHidden(false)
@@ -103,14 +102,31 @@ class InterfaceController: WKInterfaceController {
         }
     }
 
+    private func startUnlockAnimation() {
+        passcodeGroup?.setHidden(true)
+        animationGroup?.setHidden(false)
+
+//        keypadImage?.startAnimating()
+        keypadImage?.startAnimatingWithImagesInRange(NSRange(location: 1, length: 30), duration: 1, repeatCount: 1)
+
+        let delay = Int64(1 * NSEC_PER_SEC) // one second
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, delay), dispatch_get_main_queue()) {
+            [unowned self] in
+            self.keypadImage?.stopAnimating()
+            self.unlock()
+        }
+    }
+
     private func unlock() {
         passcodeGroup?.setHidden(true)
+        animationGroup?.setHidden(true)
         contentGroup?.setHidden(false)
         println("Unlocked")
     }
 
     private func lock() {
         passcodeGroup?.setHidden(false)
+        animationGroup?.setHidden(true)
         contentGroup?.setHidden(true)
         println("Locked")
 

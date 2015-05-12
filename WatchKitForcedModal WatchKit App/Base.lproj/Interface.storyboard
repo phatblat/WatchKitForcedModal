@@ -114,6 +114,12 @@
                             </items>
                             <variation key="device=watch38mm" height="150"/>
                         </group>
+                        <group width="1" height="174" alignment="left" layout="vertical" radius="0.0" spacing="0.0" id="kXf-KI-SvZ" userLabel="Animation Group" colorLabel="IBBuiltInLabel-Red">
+                            <items>
+                                <imageView alignment="left" image="Keypad1" id="esg-qu-cKY"/>
+                            </items>
+                            <variation key="device=watch38mm" height="150"/>
+                        </group>
                         <group width="1" height="174" alignment="left" layout="vertical" id="Ad8-ix-ORC" userLabel="Content Group">
                             <items>
                                 <label alignment="left" text="Unlocked" id="cFB-mQ-qcH"/>
@@ -127,11 +133,13 @@
                         </group>
                     </items>
                     <connections>
+                        <outlet property="animationGroup" destination="kXf-KI-SvZ" id="JJD-gE-hV0"/>
                         <outlet property="contentGroup" destination="Ad8-ix-ORC" id="czK-3w-Z8W"/>
                         <outlet property="entryIndicator1" destination="eUb-vb-43n" id="MwT-MI-rJ0"/>
                         <outlet property="entryIndicator2" destination="AeM-7d-JoI" id="AOo-xk-rde"/>
                         <outlet property="entryIndicator3" destination="4Sa-Z5-JIb" id="g0J-Fk-AFG"/>
                         <outlet property="entryIndicator4" destination="XTj-Gf-IIr" id="KhF-nt-cvv"/>
+                        <outlet property="keypadImage" destination="esg-qu-cKY" id="EOy-v6-8gT"/>
                         <outlet property="passcodeGroup" destination="Bus-RQ-X07" id="aty-zZ-nS8"/>
                     </connections>
                 </controller>
