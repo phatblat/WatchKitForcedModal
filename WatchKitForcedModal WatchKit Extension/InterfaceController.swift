@@ -106,6 +106,7 @@ class InterfaceController: WKInterfaceController {
         passcodeGroup?.setHidden(true)
         animationGroup?.setHidden(false)
 
+        keypadImage?.setImageNamed("Keypad") // Don't include the number
 //        keypadImage?.startAnimating()
         keypadImage?.startAnimatingWithImagesInRange(NSRange(location: 1, length: 30), duration: 1, repeatCount: 1)
 
