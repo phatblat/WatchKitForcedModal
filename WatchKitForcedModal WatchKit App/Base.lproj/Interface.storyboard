@@ -115,6 +115,14 @@
                             <variation key="device=watch38mm" height="150"/>
                         </group>
                         <group width="1" height="174" alignment="left" layout="vertical" id="Ad8-ix-ORC" userLabel="Content Group">
+                            <items>
+                                <label alignment="left" text="Unlocked" id="cFB-mQ-qcH"/>
+                                <button width="1" alignment="left" title="Lock" id="gdC-VH-Wrz">
+                                    <connections>
+                                        <action selector="didTapLock" destination="AgC-eL-Hgc" id="kDS-mJ-9lO"/>
+                                    </connections>
+                                </button>
+                            </items>
                             <variation key="device=watch38mm" height="150"/>
                         </group>
                     </items>

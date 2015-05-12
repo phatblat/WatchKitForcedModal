@@ -41,7 +41,7 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
-    // MARK: - IBAction Methods
+    // MARK: - IBAction Methods (Passcode)
 
     @IBAction func didTap1() { addKeyEntry(1) }
     @IBAction func didTap2() { addKeyEntry(2) }
@@ -57,11 +57,31 @@ class InterfaceController: WKInterfaceController {
     @IBAction func didTapDelete() {
     }
 
+    // MARK: - IBAction Methods (Content)
+
+    @IBAction func didTapLock() { lock() }
+
     // MARK: - Private
 
     private func addKeyEntry(entry: Int) {
         keyEntrySequence.append(entry)
         println("keyEntrySequence: \(keyEntrySequence)")
+
+        if keyEntrySequence.count == 4 {
+            unlock()
+        }
+    }
+
+    private func unlock() {
+        passcodeGroup?.setHidden(true)
+        contentGroup?.setHidden(false)
+        println("Unlocked")
+    }
+
+    private func lock() {
+        passcodeGroup?.setHidden(false)
+        contentGroup?.setHidden(true)
+        println("Locked")
     }
 
 }
