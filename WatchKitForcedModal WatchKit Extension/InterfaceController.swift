@@ -29,6 +29,10 @@ class InterfaceController: WKInterfaceController {
         super.awakeWithContext(context)
 
         contentGroup?.setHidden(true)
+        entryIndicator1?.setHidden(true)
+        entryIndicator2?.setHidden(true)
+        entryIndicator3?.setHidden(true)
+        entryIndicator4?.setHidden(true)
     }
 
     override func willActivate() {
@@ -54,8 +58,7 @@ class InterfaceController: WKInterfaceController {
     @IBAction func didTap9() { addKeyEntry(9) }
     @IBAction func didTap0() { addKeyEntry(0) }
 
-    @IBAction func didTapDelete() {
-    }
+    @IBAction func didTapDelete() { removeKeyEntry() }
 
     // MARK: - IBAction Methods (Content)
 
@@ -66,9 +69,33 @@ class InterfaceController: WKInterfaceController {
     private func addKeyEntry(entry: Int) {
         keyEntrySequence.append(entry)
         println("keyEntrySequence: \(keyEntrySequence)")
+        updateEntryIndicators()
+    }
 
-        if keyEntrySequence.count == 4 {
+    private func removeKeyEntry() {
+        keyEntrySequence.removeLast()
+        println("keyEntrySequence: \(keyEntrySequence)")
+        updateEntryIndicators()
+    }
+
+    private func updateEntryIndicators() {
+        switch keyEntrySequence.count {
+        case 4:
+            entryIndicator4?.setHidden(false)
             unlock()
+        case 3:
+            entryIndicator4?.setHidden(true)
+            entryIndicator3?.setHidden(false)
+        case 2:
+            entryIndicator3?.setHidden(true)
+            entryIndicator2?.setHidden(false)
+        case 1:
+            entryIndicator2?.setHidden(true)
+            entryIndicator1?.setHidden(false)
+        case 0:
+            fallthrough
+        default:
+            entryIndicator1?.setHidden(true)
         }
     }
 
@@ -82,6 +109,13 @@ class InterfaceController: WKInterfaceController {
         passcodeGroup?.setHidden(false)
         contentGroup?.setHidden(true)
         println("Locked")
+
+        // Reset the entry state
+        keyEntrySequence = []
+        entryIndicator1?.setHidden(true)
+        entryIndicator2?.setHidden(true)
+        entryIndicator3?.setHidden(true)
+        entryIndicator4?.setHidden(true)
     }
 
 }
