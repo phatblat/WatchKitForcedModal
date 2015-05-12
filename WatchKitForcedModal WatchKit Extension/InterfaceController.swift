@@ -12,9 +12,13 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    override init() {
+        super.init()
+    }
+
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
+
         // Configure interface objects here.
     }
 
