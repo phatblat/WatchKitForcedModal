@@ -8,3 +8,7 @@ This approached uses a set of explicitly sized top-level groups, with only one b
 * Passcode - keypad buttons
 * Animation - images to animate a fake modal dismissal
 * Content
+
+## License
+
+This repo is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for rights and limitations.
